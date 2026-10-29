@@ -1,0 +1,6 @@
+{
+  "name": "Smart Academy – Zamonaviy Ta'lim & IT Dasturlash Akademiyasi",
+  "description": "Litseylar, IIV tizimi va IT dasturchilar uchun zamonaviy raqamli platforma. Darsxona, Python/JS kod sandbox, Milliy Sertifikat, Audio Kitoblar, Gemini AI repetitor va xavfsiz imtihon tizimi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

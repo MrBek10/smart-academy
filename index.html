@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Smart Academy – Zamonaviy Ta'lim & IT Dasturlash Akademiyasi</title>
+    <meta name="title" content="Smart Academy – Zamonaviy Ta'lim & IT Dasturlash Akademiyasi" />
+    <meta name="description" content="Smart Academy — Litseylar, IIV tizimi va dasturchilar uchun zamonaviy raqamli platforma. Darsxona, Python/JS kod sandbox, Milliy Sertifikat, Audio Kitoblar, Gemini AI repetitor va xavfsiz imtihon tizimi." />
+    <meta name="keywords" content="Smart Academy, ta'lim, dasturlash akademiyasi, python sandbox, dtm testlari, milliy sertifikat, litsey darslari, audio kitoblar, gemini ai repetitor, iiv ta'lim" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Smart Academy Team" />
+    <link rel="canonical" href="https://smartacademy.uz/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smartacademy.uz/" />
+    <meta property="og:title" content="Smart Academy – Zamonaviy Ta'lim & IT Dasturlash Akademiyasi" />
+    <meta property="og:description" content="Litseylar, IIV tizimi va IT dasturchilar uchun interaktiv ta'lim ekotizimi: Darsxona, Kod Sandbox, Audio Kitoblar, 189 ballik Milliy Sertifikat va Gemini AI." />
+    <meta property="og:site_name" content="Smart Academy" />
+    <meta property="og:locale" content="uz_UZ" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://smartacademy.uz/" />
+    <meta name="twitter:title" content="Smart Academy – Zamonaviy Ta'lim & IT Dasturlash Akademiyasi" />
+    <meta name="twitter:description" content="Litseylar, IIV tizimi va IT dasturchilar uchun interaktiv ta'lim ekotizimi: Darsxona, Kod Sandbox, Audio Kitoblar va Gemini AI." />
+
+    <!-- Google Analytics (gtag.js) with consent-aware initialization -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SMARTACAD123"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      // Default to granted or read from cookie settings
+      try {
+        const stored = localStorage.getItem('smart_academy_cookie_settings');
+        const allowAnalytics = stored ? JSON.parse(stored).analytics !== false : true;
+        gtag('consent', 'default', {
+          'analytics_storage': allowAnalytics ? 'granted' : 'denied'
+        });
+      } catch (e) {
+        gtag('consent', 'default', { 'analytics_storage': 'granted' });
+      }
+      gtag('config', 'G-SMARTACAD123', {
+        page_title: document.title,
+        page_location: window.location.href
+      });
+    </script>
+
+    <!-- Schema.org JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "EducationalOrganization",
+          "@id": "https://smartacademy.uz/#organization",
+          "name": "Smart Academy",
+          "url": "https://smartacademy.uz/",
+          "logo": "https://smartacademy.uz/logo.png",
+          "description": "Litseylar, IIV ta'lim tizimi va IT dasturlash bo'yicha yetakchi raqamli ta'lim platformasi.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "UZ",
+            "addressLocality": "Toshkent"
+          }
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://smartacademy.uz/#webapp",
+          "name": "Smart Academy Web Platform",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "url": "https://smartacademy.uz/",
+          "description": "Interaktiv virtual darsxona, brauzer ichida ishlovchi dasturlash sandboxi, audio kitoblar va Gemini AI repetitor.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "UZS"
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500/30">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
